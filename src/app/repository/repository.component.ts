@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-repository',
@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './repository.component.css'
 })
 export class RepositoryComponent {
-  repositoryTitle = 'Title';
-  repositoryLastCommit = '01/01/2001';
-  repositoryShortDescription = 'Short description';
+  @Input() repositoryTitle: string = '';
+  @Input() repositoryLastCommit: string = '';
+  @Input() repositoryShortDescription: string = '';
+  @Input() repositoryUrl: string = '';
 }

@@ -1,0 +1,9 @@
+<div class="flex w-9/10 flex-wrap p-5 justify-center items-start gap-10">
+  <app-repository
+    *ngFor="let repository of repositories;"
+    [repositoryTitle]="repository.full_name"
+    [repositoryLastCommit]="repository.pushed_at.split('T')[0]"
+    [repositoryShortDescription]="repository.description"
+    [repositoryUrl]="repository.html_url"
+  ></app-repository>
+</div>
