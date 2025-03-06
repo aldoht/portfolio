@@ -1,0 +1,45 @@
+<header class="main-container rounded-xl bg-(--color-oxford_blue-500) h-[4rem] m-5 sticky top-0">
+  <div class="p-2 flex h-[4rem] items-center justify-between">
+    <div class="name pl-4 flex items-center">
+      <a href="#start">
+        <p>mnstrr</p>
+      </a>
+    </div>
+    <div class="sections hidden md:flex md:items-center md:gap-[5rem]">
+      <a href="#aboutme">
+        <p>About me</p>
+      </a>
+      <a href="#projects">
+        <p>Projects</p>
+      </a>
+      <a href="#repositories">
+        <p>My repositories</p>
+      </a>
+      <a href="#getintouch">
+        <p>Get in touch</p>
+      </a>
+    </div>
+    <div class="logos pr-4 flex gap-5 items-center justify-self-end">
+      <app-icon
+        [imagePath]="'./assets/icons/email-logo.png'"
+        [url]="'mailto:aldofernandoht@gmail.com'"
+        [size]=32
+      ></app-icon>
+      <app-icon
+        [imagePath]="'./assets/icons/discord-logo.png'"
+        [url]="'https://www.discord.com/users/471026859359076363'"
+        [size]=32
+      ></app-icon>
+      <app-icon
+        [imagePath]="'./assets/icons/linkedin-logo.png'"
+        [url]="'https://www.linkedin.com/in/aldo-hernandez-tamez-b0455b2b9/'"
+        [size]=32
+      ></app-icon>
+      <app-icon
+        [imagePath]="'./assets/icons/github-logo.png'"
+        [url]="'https://github.com/aldoht'"
+        [size]=32
+      ></app-icon>
+    </div>
+  </div>
+</header>
