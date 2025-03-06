@@ -1,1 +1,45 @@
-<p>header works!</p>
+<div class="main-container rounded-xl bg-(--color-oxford_blue-500) h-[4rem] mx-5 mt-5 h-10">
+  <div class="p-2 flex h-[4rem] items-center justify-between">
+    <div class="name pl-3 flex items-center">
+      <a href="#">
+        <p>mnstrr</p>
+      </a>
+    </div>
+    <div class="sections hidden md:flex md:items-center md:gap-[5rem]">
+      <a href="#">
+        <p>About me</p>
+      </a>
+      <a href="#">
+        <p>About me</p>
+      </a>
+      <a href="#">
+        <p>About me</p>
+      </a>
+      <a href="#">
+        <p>About me</p>
+      </a>
+    </div>
+    <div class="logos pr-3 flex gap-4 items-center justify-self-end">
+      <app-icon
+        [imagePath]="'./assets/icons/email-logo.png'"
+        [url]="'mailto:aldofernandoht@gmail.com'"
+        [size]=32
+      ></app-icon>
+      <app-icon
+        [imagePath]="'./assets/icons/discord-logo.png'"
+        [url]="'https://www.discord.com/users/471026859359076363'"
+        [size]=32
+      ></app-icon>
+      <app-icon
+        [imagePath]="'./assets/icons/linkedin-logo.png'"
+        [url]="'https://www.linkedin.com/in/aldo-hernandez-tamez-b0455b2b9/'"
+        [size]=32
+      ></app-icon>
+      <app-icon
+        [imagePath]="'./assets/icons/github-logo.png'"
+        [url]="'https://github.com/aldoht'"
+        [size]=32
+      ></app-icon>
+    </div>
+  </div>
+</div>
