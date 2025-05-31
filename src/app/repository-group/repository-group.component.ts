@@ -1,5 +1,5 @@
 import {Component, inject, Input} from '@angular/core';
-import {NgForOf, NgIf} from '@angular/common';
+import {NgForOf} from '@angular/common';
 import {RepositoryComponent} from '../repository/repository.component';
 import {GithubService} from '../github-api/github.service';
 
@@ -8,7 +8,6 @@ import {GithubService} from '../github-api/github.service';
   imports: [
     NgForOf,
     RepositoryComponent,
-    NgIf
   ],
   templateUrl: './repository-group.component.html',
   styleUrl: './repository-group.component.css'
